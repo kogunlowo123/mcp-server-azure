@@ -1,0 +1,28 @@
+{
+  "name": "mcp-server-azure",
+  "version": "1.0.0",
+  "description": "MCP server for Azure operations",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@azure/identity": "^4.0.0",
+    "@azure/arm-compute": "^21.0.0",
+    "@azure/storage-blob": "^12.17.0",
+    "@azure/keyvault-secrets": "^4.8.0",
+    "@azure/arm-resources": "^5.2.0",
+    "@azure/arm-containerservice": "^20.0.0",
+    "@azure/arm-monitor": "^8.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.11.0"
+  },
+  "license": "MIT"
+}
